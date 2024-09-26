@@ -1,0 +1,399 @@
+/* Desktop Design */
+
+body{
+    position: relative;
+    margin: auto;
+    margin-bottom: 5%;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(27, 27, 27);
+}
+
+@font-face {
+    font-family: 'victormono';
+    src: url("font/TTF/VictorMono-Regular.ttf");
+}
+
+.back{
+    margin-left: 11%;
+    margin-top: 2%;
+    background-color: transparent;
+    border: 0;
+    height: 100px;
+    width: 100px;
+    fill: rgb(255, 255, 255);
+}
+
+.back:hover{
+    fill: rgb(113, 113, 113);
+}
+
+
+.sign{
+    display: flex;
+    float: right;
+    margin-right: 13%;
+    margin-top: 3%;
+    width: 144.8px;
+    height: 45px;
+}
+
+.bodyteks{
+    align-items: center;
+    justify-content: left;
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+}
+
+.bigtext{
+    display: flex;
+    position: relative;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: white;
+    justify-content: center;
+    line-height: 0.1;
+}
+
+.text{
+    display: flex;
+    position: relative;
+    color: white;
+    text-align: left;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    font-family: victormono;
+    font-size: 10pt;
+    word-spacing: 1pt;
+}
+
+
+.contain{
+    display: grid;
+    grid-template-columns: 290px 290px 290px 290px 290px;
+    margin:auto;
+    justify-content: center;
+}
+
+.porto{
+    background-color: transparent;
+    background-size: 280px;
+    border: 0;
+}
+
+.img{
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    padding-bottom: 2%;
+    height: 280px;
+    width: 280px;
+    object-fit: cover;
+ }
+
+ .img:hover{
+    opacity: 50%;
+ }
+
+ .vid{
+    text-align: left;
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 280px;
+    width: 280px;
+    object-fit:contain;
+ }
+
+ .back2{
+    background-color: transparent;
+    border: 0;
+    margin: auto;
+    height: 75px;
+    width: 75px;
+    fill: white;
+}
+
+.back2:hover{
+    fill: rgb(136, 136, 136);
+}
+
+h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 28px;
+    text-align: left;
+    line-height: 0;
+}
+
+.popup{
+    display: flex;
+    align-items: center;
+    margin: auto;
+    justify-content: center;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    transition: 1500ms;
+}
+
+.position-open{
+    top:0;
+    opacity: 100;
+    /* transform: scale(100%, 100%); */
+    /* transform: translate(50px); */
+}
+
+.position-close{
+    top:-200vh !important;
+    opacity: 0;
+    /* transform: scale(0% , 0%); */
+}
+
+ .popup .overlay{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.85 );
+    opacity: 100;
+ }
+
+ .popup .popup-content-cheazz{
+    align-items: center ;
+    position: fixed;
+    opacity: 100;
+    width: 55%;
+ }
+
+ .popup .popup-content-cheazz .control{
+    text-align: left;
+ }
+
+
+.content_vid{
+    display: flex;
+    gap: 30px;
+ }
+
+ 
+ .teks-content{
+    color: white;
+    font-family: victormono;
+    text-align: left;
+ }
+
+.popup .popup-content-cheazz .control{
+    background: transparent;
+    color: white;
+}
+
+ .popup .popvid{
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 480px;
+    width: 270px;
+    object-fit:contain;
+ }
+
+ .popup .popimg{
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 400px;
+    width: 400px;
+    object-fit:contain;
+ }
+
+ .popup .popimglandscape{
+    margin: auto;
+    margin-top: 1%;
+    margin-left: 1%;
+    height: 360px;
+    width: 640px;
+    object-fit:contain;
+ }
+
+.collab{
+    color: rgb(255, 255, 255);
+    transition: 0.3s;
+}
+
+.collab:hover {
+ background-color: rgb(255, 255, 255);
+ color: rgb(0, 0, 0);
+}
+
+/* Mobile Design */
+@media (max-width: 900px){
+    body{
+        position: relative;
+        margin: auto;
+        padding-top: 5%;
+        background-color: rgb(27, 27, 27);
+    }
+
+    .back{
+        margin-left: 5%;
+        background-color: transparent;
+        border: 0;
+        height: 100px;
+        width: 100px;
+        fill: rgb(255, 255, 255);
+    }
+
+    .back:hover{
+        fill: rgb(113, 113, 113);
+    }
+
+    .control{
+        display: block;
+    }
+
+    .sign{
+        display: flex;
+        float: right;
+        margin-right: 5%;
+        margin-top: 5%;
+        width: 144.8px;
+        height: 45px;
+    }
+
+    .bigtext{
+        position: relative;
+        font-size: 36px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        color: rgb(255, 255, 255);
+        text-align: center;
+        justify-content: center;
+        
+    }
+    .text{
+        color: rgb(255, 255, 255);
+        text-align: center;
+        font-family: victormono;
+        font-size: 10pt;
+        word-spacing: 1pt;
+        align-items: center ;
+        justify-content: center;
+    }
+
+
+    .contain{
+        display: grid;
+        margin: auto;
+        grid-template-columns: auto auto auto;
+        justify-content: center;
+
+    }
+
+    .back2{
+        background-color: transparent;
+        border: 0;
+        margin: auto;
+        height: 75px;
+        width: 75px;
+        fill: white;
+    }
+    
+    .back2:hover{
+        fill: rgb(136, 136, 136);
+    }
+
+    .popup{
+        display: flex;
+        position: absolute;
+    }
+    .content_vid{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+     }
+
+     .popup .popup-content-cheazz{
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        opacity: 100%;
+        width: 75%;
+     }
+
+     .popvid{
+        align-items: center;
+        justify-content: center;
+     }
+
+     .teks-content{
+        color: white;
+        font-family: victormono;
+        text-align: left;
+        margin: auto;
+    
+     }
+
+     .popup .popvid{
+        padding-left: 30%;
+        margin: auto;
+        margin-top: 1%;
+        margin-left: 1%;
+        height: 320px;
+        width: 180px;
+        object-fit:contain;
+     }
+    
+     .popup .popimg{
+        padding-left: 12%;
+        margin: auto;
+        justify-content: center;
+        align-items:center ;
+        margin-top: 1%;
+        margin-left: 1%;
+        height: 300px;
+        width: 300px;
+        object-fit:contain;
+     }
+    
+     .popup .popimglandscape{
+        margin: auto;
+        margin-top: 1%;
+        margin-left: 1%;
+        height: 216px;
+        width: 384px;
+        object-fit:contain;
+     }
+
+     .img{
+        position: relative;
+        text-align: left;
+        margin-top: 1%;
+        margin-left: 1%;
+        margin-bottom: 1%;
+        padding-bottom: 1%;
+        height: 150px;
+        width: 150px;
+        object-fit: cover;
+     }
+    
+     .img:hover{
+        opacity: 50%;
+     }
+    
+     .vid{
+        text-align: left;
+        margin-top: 1%;
+        margin-left: 1%;
+        height: 280px;
+        width: 280px;
+        object-fit:contain;
+     }
+
+
+}
+
+
